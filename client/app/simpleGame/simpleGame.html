@@ -1,0 +1,12 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+<!-- <div class="col&#45;md&#45;12"> -->
+<!-- This is the simpleGame view. -->
+<!-- </div> -->
+<div class="container container-main">
+	{{animating}}
+	<div class="container-canvas">
+		<button class="btn btn-block btn-primary" ng-click="start()" ng-disabled="animating"> start
+		</button>
+		<canvas id="snake" width="800" height="400" snake-game></canvas>
+	</div>
+</div>
