@@ -186,6 +186,9 @@ angular.module('sampleAppApp')
           }
         };
 
+        /** After a snake eats its prey, increse the size of the
+         *  snake and add a new prey/food in the canvas.
+         */
         var removeAndAddNew = function() {
           canvas.remove(prey);
           prey = snake.createPrey();
@@ -205,6 +208,8 @@ angular.module('sampleAppApp')
           return false;
         };
 
+        /** To make sure that snake always move atleast a block whose width is a multiple of 20.
+         */
         var snapSnake = function(mType, snakePart) {
           var left = snakePart.getLeft();
           var top = snakePart.getTop();

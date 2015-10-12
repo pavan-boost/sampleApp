@@ -3,9 +3,11 @@
 <!-- This is the simpleGame view. -->
 <!-- </div> -->
 <div class="container container-main">
-	{{animating}}
 	<div class="container-canvas">
-		<button class="btn btn-block btn-primary" ng-click="start()" ng-disabled="animating"> start
+		<center>
+		Use arrow keys after you press Start
+		</center>
+		<button class="btn btn-block btn-primary" ng-click="start()" ng-disabled="animating"> Start
 		</button>
 		<canvas id="snake" width="800" height="400" snake-game></canvas>
 	</div>

@@ -10,7 +10,6 @@ angular.module('sampleAppApp')
         $scope.login(user.email, user.password);
         db.createUserRecord(authData.uid);
       } else {
-        console.log('err:', authData);
         $scope.error = authData.message;
       }
     };
@@ -26,7 +25,6 @@ angular.module('sampleAppApp')
 
     var changeState = function(success, authErr) {
       if (success) {
-        console.log('successfully loggedin');
         SweetAlert.swal({
           title: 'Welcome',
           text: 'Nothing much to see inside Unless..',
@@ -40,8 +38,6 @@ angular.module('sampleAppApp')
     };
 
     $scope.login = function(email, password) {
-      console.log('email:', email);
-      console.log('pass:', password);
       auth.login({
         email: email,
         password: password
@@ -51,9 +47,5 @@ angular.module('sampleAppApp')
     $scope.changePage = function(page) {
       $scope.page = page;
     };
-
-    $http.get('/api/things').success(function(awesomeThings) {
-      $scope.awesomeThings = awesomeThings;
-    });
 
   });

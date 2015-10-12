@@ -2,5 +2,5 @@
 
 angular.module('sampleAppApp')
   .controller('SimpleGameCtrl', function ($scope) {
-    $scope.message = 'Hello';
+    // Most of the code is in the  snake Game directive and snake service.
   });

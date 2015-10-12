@@ -40,6 +40,10 @@ angular.module('sampleAppApp')
       snake = [];
     };
 
+
+    /** checks for collision with the canvas boundaries
+     */
+
     var checkForCollisionWithWalls = function(canvas, snakeHead) {
     
       if(snakeHead.getLeft() < 0 || snakeHead.getLeft() > canvas.getWidth() || 
@@ -49,6 +53,9 @@ angular.module('sampleAppApp')
       return false;
     };
 
+    /** checks if the snake collided with either the walls or its
+     *  body ifself.
+     */
     this.collided = function(canvas) {
       var snakeHead = snake[0], isCollided = false;
       if (checkForCollisionWithWalls(canvas, snakeHead)) {

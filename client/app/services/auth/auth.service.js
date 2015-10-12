@@ -16,7 +16,6 @@ angular.module('sampleAppApp')
         }).then(function(authData) {
           cb(true, authData, user);
         }).catch(function(err){
-          console.log('auth failed:', err);
           cb(false, err);
         });
       },
