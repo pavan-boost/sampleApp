@@ -186,7 +186,7 @@ angular.module('sampleAppApp')
           }
         };
 
-        /** After a snake eats its prey, increse the size of the
+        /** After a snake eats its prey, increase the size of the
          *  snake and add a new prey/food in the canvas.
          */
         var removeAndAddNew = function() {

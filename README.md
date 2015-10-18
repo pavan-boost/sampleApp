@@ -1,3 +1,3 @@
 Sample App 
 
-[sampleapp-gaikai.herokuapp.com](https://sampleapp-gaikai.herokuapp.com)
+[sampleapp-game.herokuapp.com](https://sampleapp-game.herokuapp.com)
